@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+html, 
+body {
+    height: 100vh;
+    width: 100vw;
+    font: 1.8rem 'Montserrat', sans-serif;
+
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-flow: column;
+}
+
+body {
+    background: #78cc5a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.clock-input input {
+    width: 70vw;
+    max-width: 12rem;
+    height: 1.875rem;
+    font: 300 1rem 'Dosis', sans-serif;
+    text-align: center;
+}
+
+.container {
+    height: 12.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.container .clock-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.container .clock-column p + p{
+    margin-top: .6rem;
+    border-block-start: solid 1px;
+    padding-top: .3rem;
+}
+
+.container .clock-timer {
+    font-size: 1.6rem;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font: 700 3.6rem;
+    height: 30px;
+}
