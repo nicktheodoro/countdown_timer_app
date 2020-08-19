@@ -17,7 +17,7 @@ function calcDateIntevarl() {
     document.querySelector('.clock-seconds').innerHTML = seconds
 
     // start dynamic counter of date
-    startTimer = setInterval(function() { calcDateIntevarl(); }, 1000)
+    startTimer = setInterval(calcDateIntevarl, 1000)
 
     if (now >= timeTo) {
             clearInterval(startTimer);
