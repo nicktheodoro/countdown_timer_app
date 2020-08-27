@@ -29,11 +29,14 @@ body {
     width: 70vw;
     max-width: 12rem;
     height: 1.875rem;
+
     font: 300 1rem 'Dosis', sans-serif;
     text-align: center;
+
+    margin-top: 1.2rem;
 }
 
-.container {
+.clock-output {
     height: 12.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -43,20 +46,20 @@ body {
     text-transform: uppercase;
 }
 
-.container .clock-column {
+.clock-output .clock-column {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
 }
 
-.container .clock-column p + p{
+.clock-output .clock-column p + p{
     margin-top: .6rem;
     border-block-start: solid 1px;
     padding-top: .3rem;
 }
 
-.container .clock-timer {
+.clock-output .clock-timer {
     font-size: 1.6rem;
 }
 
@@ -65,6 +68,11 @@ footer .container {
     align-items: center;
     justify-content: center;
 
-    font: 700 3.6rem;
+    font: 300 1.2rem 'Dosis', sans-serif;
     height: 30px;
+
+    text-transform: none;
+    color: #fff;
+
+    padding-top: 1rem;
 }
